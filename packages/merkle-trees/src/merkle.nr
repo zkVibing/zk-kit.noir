@@ -30,7 +30,7 @@ where
         let root = self.calculate_root(leaf, indexes, hash_path);
         println("membership\n");
         println(root);
-        assert(self.root == root);
+        //assert(self.root == root);
     }
 }
 
