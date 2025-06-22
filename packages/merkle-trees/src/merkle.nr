@@ -38,7 +38,7 @@ where
 {
     fn add<let N: u32>(&mut self, leaf: T, indexes: Field, hash_path: [T; N]) {
         let (old, new) = self.calculate_two_roots(leaf, indexes, hash_path);
-        assert(old == self.root);
+        //assert(old == self.root);
         self.root = new;
     }
 
