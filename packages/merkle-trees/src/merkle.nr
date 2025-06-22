@@ -28,8 +28,8 @@ where
 {
     fn membership<let N: u32>(self, leaf: T, indexes: Field, hash_path: [T; N]) {
         let root = self.calculate_root(leaf, indexes, hash_path);
-        println("membership\n");
-        println(root);
+        //println("membership\n");
+        //println(root);
         assert(self.root == root);
     }
 }
@@ -42,8 +42,8 @@ where
         let new = self.calculate_root(leaf, indexes, hash_path);        
         // let (old, new) = self.calculate_two_roots(leaf, indexes, hash_path);
         //assert(old == self.root);
-        print("add:\n");
-        print(new);
+        //print("add:\n");
+        //print(new);
         self.root = new;
     }
 
